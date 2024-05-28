@@ -10,14 +10,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
 <!---strat-slider---->
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<!--script type="text/javascript" src="isInViewport.jquery.js"></script-->
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="isInViewport.jquery.js"></script
 <!---//-slider---->
 <style>
 .throw-confetti{
@@ -38,7 +38,8 @@ $.fn.isInViewport = function() {
 };
 
 });
-$(window).scroll(function (event) {
+//*$(window).scroll(function (event) {
+	 $(window).on('resize scroll', function() {
     var scroll = $(window).scrollTop();
 //    console.log(scroll);
      if ($('#abcd1').isInViewport()) {
@@ -99,11 +100,12 @@ $(".BLAST").isInViewport(function (status) {
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							
-                                                        <li class="act"><a href="index.php">Home</a></li>
-                                                        <li><a href="admin.php">Admin Login</a></li>
-														
-                                                        <!--<li><a href="voting.php">Voting</a></li>
-                                                        <li><a href="results.php">Results</a></li> -->
+                            <li class="act"><a href="index.php">Home</a></li>
+                            <!--<li><a href="admin.php">Login</a></li>-->
+                            <li><a href="voting.php">Voting</a></li>
+							<li><a href="user.php">User Login</a></li>
+														<li><a href="voters.php">User Register</a></li>
+                                                        <li><a href="results.php">Results</a></li>
 							                            <li><a href="#">Contact Us</a></li>
 
 						</ul>
@@ -150,7 +152,7 @@ $(".BLAST").isInViewport(function (status) {
 				</section>
 			</div>
 			<!-- FlexSlider -->
-				<script defer src="js/jquery.flexslider.js"></script>
+				<script defer src="assets/js/jquery.flexslider.js"></script>
 				<script type="text/javascript">
 										$(window).load(function(){
 										  $('.flexslider').flexslider({
@@ -209,7 +211,7 @@ $(".BLAST").isInViewport(function (status) {
 								<p>The State Assembly elections in India are the elections in which the Indian voters choose the members of the Vidhan Sabha (or State/Legislative Assembly). These elections are held every 5 years and the chosen members are called MLAs.</p>
 							</div>
 							<div class="col-xs-4 wlcome-grid-left-grid">
-								<img src="images/p1.jpg" alt=" " class="img-responsive">
+								<img src="assets/images/p1.jpg" alt=" " class="img-responsive">
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -223,7 +225,7 @@ $(".BLAST").isInViewport(function (status) {
 
 							</div>
 							<div class="col-xs-4 wlcome-grid-left-grid fgh">
-								<img src="images/p2.jpg" alt=" " class="img-responsive">
+								<img src="assets/images/2.png" alt=" " class="img-responsive">
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -234,14 +236,14 @@ $(".BLAST").isInViewport(function (status) {
 						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 							  <ul class="resp-tabs-list">
 								  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								  <li class="resp-tab-item grid1 resp-tab-active" aria-controls="tab_item-0" role="tab"><span>2018 Elections</span></li>
+								  <li class="resp-tab-item grid1 resp-tab-active" aria-controls="tab_item-0" role="tab"><span>2022 Elections</span></li>
 								  <div class="clear"></div>
 							  </ul>
 								<div class="resp-tabs-container">
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 										  <div class="tab_list">
-											<img src="images/tn.jpg" alt=" " class="img-responsive">
+											<img src="assets/images/tn.jpg" alt=" " class="img-responsive">
 										  </div>
 										  <div class="tab_list1">
 											<a href="#">Tamil Nadu Elections</a>
@@ -251,21 +253,21 @@ $(".BLAST").isInViewport(function (status) {
 										</div>
 										<div class="facts">
 										   <div class="tab_list">
-												<img src="images/ap.jpg" alt=" " class="img-responsive">
+												<img src="assets/images/ap.jpg" alt=" " class="img-responsive">
 										  </div>
 										  <div class="tab_list1">
 											<a href="#">Andhra Pradesh Elections</a>
-											<p>October 1,2018<span>Nam libero tempore, cum soluta nobis.</span></p>
+											<p>October 1,2022<span>Nam libero tempore, cum soluta nobis.</span></p>
 										  </div>
 										  <div class="clearfix"> </div>
 										</div>
 										<div class="facts">
 										   <div class="tab_list">
-												<img src="images/kerala.jpg" alt=" " class="img-responsive">
+												<img src="" alt=" " class="img-responsive">
 										  </div>
 										  <div class="tab_list1">
-											<a href="#">Kerala Elections</a>
-											<p>October 15,2018<span>Nam libero tempore, cum soluta nobis.</span></p>
+											<a href="#">s</a>
+											<p>October 15,2022<span></span></p>
 										  </div>
 										  <div class="clearfix"> </div>
 										</div>
@@ -273,37 +275,37 @@ $(".BLAST").isInViewport(function (status) {
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
 										<div class="facts">
 										  <div class="tab_list">
-												<img src="images/4.jpg" alt=" " class="img-responsive">
+												<img src="" alt=" " class="img-responsive">
 										  </div>
 										  <div class="tab_list1">
-											<a href="#">excepturi sint occaecati</a>
-											<p>October 23,2018<span>Nam libero tempore, cum soluta nobis.</span></p>
+											<a href="#"></a>
+											<p>October 23,2022<span>.</span></p>
 										  </div>
 										  <div class="clearfix"> </div>
 										</div>
 										<div class="facts">
 										   <div class="tab_list">
-												<img src="images/1.jpg" alt=" " class="img-responsive">
+												<img src="" alt=" " class="img-responsive">
 										  </div>
 										  <div class="tab_list1">
-											<a href="#">excepturi sint occaecati</a>
-											<p>October 28,2015<span>Nam libero tempore, cum soluta nobis.</span></p>
+											<a href="#"></a>
+											<p><span>.</span></p>
 										  </div>
 										  <div class="clearfix"> </div>
 										</div>
 										<div class="facts">
 										   <div class="tab_list">
-												<img src="images/2.jpg" alt=" " class="img-responsive">
+												<img src="" alt=" " class="img-responsive">
 										  </div>
 										  <div class="tab_list1">
-											<a href="#">excepturi sint occaecati</a>
-											<p>October 31,2015<span>Nam libero tempore, cum soluta nobis.</span></p>
+											<a href="#"></a>
+											<p><span></span></p>
 										  </div>
 										  <div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
-							 <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+							 <script src="assets/js/easyResponsiveTabs.js" type="text/javascript"></script>
 								<script type="text/javascript">
 									$(document).ready(function () {
 										$('#horizontalTab').easyResponsiveTabs({
@@ -324,8 +326,8 @@ $(".BLAST").isInViewport(function (status) {
 
 
 		<!-- scroll_top_btn -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="assets/js/move-top.js"></script>
+		<script type="text/javascript" src="assets/js/easing.js"></script>
 	    <script type="text/javascript">
 			$(document).ready(function() {
 
@@ -344,7 +346,7 @@ $(".BLAST").isInViewport(function (status) {
 		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 		<!--end scroll_top_btn -->
 <!-- for bootstrap working -->
-	 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	 <script type="text/javascript" src="assets/js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
 </body>
 </html>
